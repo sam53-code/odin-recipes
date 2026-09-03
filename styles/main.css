@@ -1,21 +1,14 @@
+@import url(../styles/colors.css);
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-:root {
-  --background-color: #ebeaea;
-  --bg-content-color: #f2f5ff;
-  --heading-color: #14174e;
-  --border-color: #131212;
-  --text-color: #000000;
-  --links-color: #1921fe;
-}
-
 body {
   font-family: "Roboto", Helvetica, sans-serif;
-  background-color: var(--bg-color);
+  background-color: white;
   color: var(--heading-color);
 }
 
@@ -24,7 +17,7 @@ body {
   justify-content: space-between;
   margin: 0;
   padding: 8px 200px;
-  background-color: var(--bg-content-color);
+  background-color: var(--background-color);
   align-items: center;
 }
 
@@ -46,7 +39,7 @@ body {
 }
 
 .nav-links .btn {
-  background-color: #c2410c;
+  background-color: var(--links-color);
   color: var(--background-color);
   padding: 2px 12px;
   margin: 0;
@@ -57,15 +50,16 @@ body {
 
 .nav-links .btn:hover {
   text-decoration: none;
-  color: var(--background-color);
-  background-color: var(--links-color);
+  color: var(--text-color);
+  background-color: var(--btn-color);
   border: var(--links-color);
   cursor: pointer;
 }
 
 .navbar h1 a {
   color: var(--heading-color);
-  font-size: 34px;
+  font-size: 36px;
+  font-weight: 900;
   text-decoration: none;
 }
 
@@ -74,17 +68,16 @@ body {
 }
 
 .recipes {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 200px;
+  padding: 8px 200px;
   border: 0.5px solid var(--border-color);
   background-color: var(--bg-content-color);
 }
 
 .recipes h2 {
   color: var(--text-color);
-  font-style: italic;
+  text-align: center;
+  padding: 6px 0;
+  font-weight: 600;
 }
 
 .recipes ul {
@@ -96,10 +89,10 @@ body {
 
 .recipes li a {
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--links-color);
 }
 
 .recipes li a:hover {
   text-decoration: underline;
-  color: var(--links-color);
+  color: var(--text-color);
 }

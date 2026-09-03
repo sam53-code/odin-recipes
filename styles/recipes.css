@@ -1,74 +1,50 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+@import url(../styles/colors.css);
 
-:root {
-  --background-color: #ebeaea;
-  --bg-content-color: #f2f5ff;
-  --heading-color: #14174e;
-  --border-color: #131212;
-  --text-color: #000000;
-  --links-color: #1921fe;
-}
-
-body {
-  font-family: "Roboto", Helvetica, sans-serif;
-  background-color: var(--bg-color);
-  color: var(--heading-color);
-}
-
-.navbar {
+.serving {
   display: flex;
   justify-content: space-between;
-  margin: 0;
-  padding: 8px 200px;
+  align-items: center;
+  margin: 12px 200px;
+  padding: 14px 8px;
+  border: 0.5px solid var(--border-color);
+  border-radius: 8px;
   background-color: var(--bg-content-color);
+}
+
+.cooked-meal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.cooked-meal h1 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 36px;
+  width: 180px;
   align-items: center;
 }
 
-.nav-links {
-  display: flex;
-  justify-content: space-between;
-  gap: 8px;
-  align-items: baseline;
+.cooked-meal img {
+  width: 260px;
+  height: 260px;
+  border: 0.5px solid var(--border-color);
+  border-radius: 16px;
+  overflow: hidden;
 }
 
-.nav-links a {
-  text-decoration: none;
-  color: var(--text-color);
+.menu-description {
+  width: 360px;
+  text-align: center;
 }
 
-.nav-links a:hover {
-  text-decoration: underline;
-  color: var(--links-color);
+.menu-description h2 {
+  font-size: 32px;
+  font-weight: 600;
 }
 
-.nav-links .btn {
-  background-color: #c2410c;
-  color: var(--background-color);
-  padding: 2px 12px;
-  margin: 0;
-  border: none;
-  border-radius: 4px;
-  font-weight: 400;
-}
-
-.nav-links .btn:hover {
-  text-decoration: none;
-  color: var(--background-color);
-  background-color: var(--links-color);
-  border: var(--links-color);
-  cursor: pointer;
-}
-
-.navbar h1 a {
-  color: var(--heading-color);
-  font-size: 34px;
-  text-decoration: none;
-}
-
-.navbar h1 a span {
-  color: var(--links-color);
+.menu-description p {
+  word-spacing: 4px;
+  line-height: 28px;
 }
