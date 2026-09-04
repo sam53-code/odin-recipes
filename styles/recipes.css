@@ -48,3 +48,27 @@
   word-spacing: 4px;
   line-height: 28px;
 }
+
+.ingredients,
+.cooking-steps {
+  background-color: var(--bg-content-color);
+  margin: 20px 200px;
+  padding: 14px 8px;
+  border: 0.5px solid var(--border-color);
+  border-radius: 8px;
+}
+
+.ingredients h2,
+.cooking-steps h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  border-bottom: 0.5px solid var(--border-color);
+  padding-bottom: 6px;
+}
+
+.ingredients ul,
+.cooking-steps ol {
+  padding: 4px 60px;
+  line-height: 32px;
+}
