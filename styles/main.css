@@ -1,0 +1,103 @@
+@import url(../styles/colors.css);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", Helvetica, sans-serif;
+  background-color: white;
+  color: var(--heading-color);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 8px 200px;
+  background-color: var(--background-color);
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: baseline;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+  color: var(--links-color);
+}
+
+.nav-links .btn {
+  background-color: var(--links-color);
+  color: var(--background-color);
+  padding: 2px 12px;
+  margin: 0;
+  border: none;
+  border-radius: 4px;
+  font-weight: 400;
+}
+
+.nav-links .btn:hover {
+  text-decoration: none;
+  color: var(--text-color);
+  background-color: var(--btn-color);
+  border: var(--links-color);
+  cursor: pointer;
+}
+
+.navbar h1 a {
+  color: var(--heading-color);
+  font-size: 36px;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.navbar h1 a span {
+  color: var(--links-color);
+}
+
+.navbar span span {
+  display: inline-block;
+  transform: scaleX(-1);
+}
+
+.recipes {
+  padding: 8px 200px;
+  border: 0.5px solid var(--border-color);
+  background-color: var(--bg-content-color);
+}
+
+.recipes h2 {
+  color: var(--text-color);
+  text-align: center;
+  padding: 6px 0;
+  font-weight: 600;
+}
+
+.recipes ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  list-style: none;
+}
+
+.recipes li a {
+  text-decoration: none;
+  color: var(--links-color);
+}
+
+.recipes li a:hover {
+  text-decoration: underline;
+  color: var(--text-color);
+}

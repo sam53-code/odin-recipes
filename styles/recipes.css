@@ -1,0 +1,74 @@
+@import url(../styles/colors.css);
+
+.serving {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px 200px;
+  padding: 14px 8px;
+  border: 0.5px solid var(--border-color);
+  border-radius: 8px;
+  background-color: var(--bg-content-color);
+}
+
+.cooked-meal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.cooked-meal h1 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 36px;
+  width: 180px;
+  align-items: center;
+}
+
+.cooked-meal img {
+  width: 260px;
+  height: 260px;
+  border: 0.5px solid var(--border-color);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.menu-description {
+  width: 360px;
+  text-align: center;
+}
+
+.menu-description h2 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.menu-description p {
+  word-spacing: 4px;
+  line-height: 28px;
+}
+
+.ingredients,
+.cooking-steps {
+  background-color: var(--bg-content-color);
+  margin: 20px 200px;
+  padding: 14px 8px;
+  border: 0.5px solid var(--border-color);
+  border-radius: 8px;
+}
+
+.ingredients h2,
+.cooking-steps h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  border-bottom: 0.5px solid var(--border-color);
+  padding-bottom: 6px;
+}
+
+.ingredients ul,
+.cooking-steps ol {
+  padding: 4px 60px;
+  line-height: 32px;
+}
