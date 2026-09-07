@@ -10,15 +10,41 @@ body {
   font-family: "Roboto", Helvetica, sans-serif;
   background-color: white;
   color: var(--heading-color);
+  background: url(../img/salmon.png) center;
 }
 
-.navbar {
+main {
+  height: 100vh;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 42px;
+}
+
+.navbar,
+.hero {
   display: flex;
   justify-content: space-between;
   margin: 0;
   padding: 8px 200px;
   background-color: var(--background-color);
   align-items: center;
+}
+
+.hero {
+  gap: 100px;
+}
+
+.hero h1 {
+  min-width: fit-content;
+  color: var(--btn-color);
+}
+
+.hero p {
+  text-align: center;
+  line-height: 26px;
+  color: var(--links-color);
 }
 
 .nav-links {
