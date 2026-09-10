@@ -11,6 +11,8 @@ body {
   background-color: white;
   color: var(--heading-color);
   background: url(../img/salmon.png) center;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
 }
 
 main {
@@ -34,10 +36,12 @@ h1 {
 
 .hero {
   gap: 100px;
+  background-color: var(--bg-content-color);
+  border: 0.5px solid var(--border-color);
 }
 
 .hero h1 {
-  min-width: fit-content;
+  min-width: 300px;
   color: var(--btn-color);
 }
 
@@ -54,12 +58,14 @@ h1 {
   align-items: baseline;
 }
 
-.nav-links a {
+.nav-links a,
+.footer-links a {
   text-decoration: none;
   color: var(--text-color);
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.footer-links a:hover {
   text-decoration: underline;
   color: var(--links-color);
 }
@@ -126,4 +132,23 @@ h1 {
 .recipes li a:hover {
   text-decoration: underline;
   color: var(--text-color);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 40px;
+  background-color: var(--bg-content-color);
+  padding: 20px 200px;
+  line-height: 24px;
+}
+
+.footer-links li {
+  list-style: none;
+}
+
+.footer-bottom {
+  text-align: center;
+  background-color: var(--background-color);
+  padding: 20px 0;
 }
